@@ -1,4 +1,6 @@
 #include"StructFunc.h"
+#include<time.h>
+#include<iomanip>
 #include<iostream>
 
 using namespace std;
@@ -11,7 +13,7 @@ int main()
 	TV_on_room.width = 160;
 	TV_on_room.mass = 30;
 	TV_on_room.channels = 100;
-	CoutTV(TV_on_room);
+	TV_on_room.CoutTV();
 
 	Phone MyPhone;
 	MyPhone.name_company = "Xiaomi";
@@ -19,7 +21,7 @@ int main()
 	MyPhone.height = 17;
 	MyPhone.width = 10; 
 	MyPhone.weight = 350;
-	CoutPhone(MyPhone);
+	MyPhone.CoutPhone();
 
 	Cup MyCup;
 	MyCup.height = 15;
@@ -27,7 +29,8 @@ int main()
 	MyCup.weight = 250;
 	MyCup.color_inside = "Black";
 	MyCup.color_outside = "White";
-	CoutCup(MyCup);
+	MyCup.CoutCup();
+	
 
 	PowerBank MyPower;
 	MyPower.Company = "Xiaomi";
@@ -35,7 +38,8 @@ int main()
 	MyPower.width = 16;
 	MyPower.weight = 120;
 	MyPower.color = "silver";
-	CoutPowerBank(MyPower);
+	MyPower.CoutPowerBank();
+	
 
 	computer_mouse MyMouse;
 	MyMouse.Company = "Xiaomi";
@@ -44,5 +48,6 @@ int main()
 	MyMouse.weight = 150;
 	MyMouse.color = "White";
 	MyMouse.number_of_buttons = 6;
-	CoutMouse(MyMouse);
+	MyMouse.CoutMouse();
+	
 }
